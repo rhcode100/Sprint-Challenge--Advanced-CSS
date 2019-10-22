@@ -21,9 +21,15 @@
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
   <script src="js/styles.js" async></script>
   <script src="js/header.js" async></script>
-  
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script type="text/javascript">
+      function showSignUp(){
+        const walkContent = document.querySelector('.walk-content');
+        const signUp = document.querySelector('.sign-up');
+        return console.log(walkContent, signUp);
+        
+      }
+  </script>
 </head>
 
 <body> 
@@ -36,14 +42,15 @@
           <nav>
             <a href="#">Home</a>
             <a href="about-us.html">About Us</a>
-            <a href="#">Blog</a>
             <a href="#">Contact</a>
-            <a href="#">Sign In</a>
           </nav>     
         </div>
         <div class="intro-content">
-          <h2>Lift Off</h2>    
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+          <img src="img/naut.png" class="naut">
+          <div class="text">
+            <h2>Lift Off</h2>    
+            <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+          </div>
         </div>  
       </div> 
     </header>
@@ -61,24 +68,31 @@
       </section>
       
       <section class="walk">
-        <div class="walk-text">
-          <h3>Let's Go For A Walk</h3>
-
-          <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-        
-          <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-        
-          <button class="btn">
-            Sign Up
-          </button>
+        <div class="walk-content">
+          <span class="walk-text">
+            <h3>Let's Go For A Walk</h3>
+            <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>        
+            <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>        
+            <button class="btn">
+              Sign Up
+            </button>
+          </span>        
+          <div class="walk-img">
+              <img src="img/space-walk.png" alt="Space walking astronaut">
+          </div>
         </div>
-        
-        <div class="walk-img">
-            <img src="img/space-walk.png" alt="Space walking astronaut">
+        <div class='sign-up'>
+          <span class="sign-up form">
+            <form onLoad="showSignUp">
+              <input type="text" placeholder="First Name" onchange="">
+              <input type="text" placeholder="Last Name" onchange="">
+              <input type="text" placeholder="Email" onchange="">
+              <button type="submit" onClick= "showSignUp()" >Go!</button>
+            </form>
+          </span>
         </div>
       </section>
       </div>
-
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>

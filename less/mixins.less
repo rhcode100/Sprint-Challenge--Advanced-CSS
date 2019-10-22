@@ -6,7 +6,8 @@
 
 .setheader{ 
     .header-container{   
-        width: 100%; 
+        width: 100%;
+        height: 70%;  
 
         #canvas{
             background-image: url("../img/demo-bg.jpg");
@@ -14,18 +15,27 @@
         }
         .topheader{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: absolute;           
-            padding: 0;
-            margin: 0 auto; 
-            width: 70%;      
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;           
+            padding: 2%;
+            margin: -7%; 
+            width: 90%;      
             -webkit-transform: translate3d(20rem, -55rem, 0);
             transform: translate3d(20rem, -55rem, 0);
+            position: absolute;  
             h1{
                 color: white; 
-            }          
+            }  
+            nav{
+                display: flex; 
+                flex-direction: row;
+                justify-content: space-evenly;                
+                a{
+                    
+                      
+                }
+            }        
 
         }
         .intro-content{
@@ -36,18 +46,31 @@
             border-bottom: .7px solid white;
             width: 70%;
             position: absolute;  
-            padding: 0% 2.5%;
+            padding: 1% 0%;
             -webkit-transform: translate3d(50rem, -40rem, 0);
             transform: translate3d(20rem, -40rem, 0);
             margin: 0 auto;
-            h2{
-                color: white; 
+            .naut{
+                opacity: .5;               
+                height: 35%; 
+                width: 35%; 
+                margin-top: -15%
             }
-            p{
-                padding: 2%;
-                color: white;
-
-            }
+            .text{
+                display: flex;
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center; 
+                margin-top: 4.5%; 
+                width: 75%; 
+                h2{
+                    color: white; 
+                }
+                p{
+                    padding-top: 1.5%;
+                    color: white;    
+                }
+            }           
         }  
     }
 }
@@ -62,10 +85,10 @@
 
 .fixnav{
     nav{
-        width: 70%;
+        width: 35%;
         display:flex;
-        justify-content: space-evenly;
-        padding: 2% 0%;
+        justify-content: space-between;
+        //padding: 2% 0%;
         a{
             text-decoration: none;
             font-size: 1.6rem;

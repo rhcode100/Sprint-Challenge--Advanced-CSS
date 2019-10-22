@@ -1,0 +1,23 @@
+{
+  "name": "spacewalkers",
+  "version": "1.0.1",
+  "description": "Simple user interface with animation",
+  "main": "index.js",
+  "dependencies": {
+    "gsap": "^2.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhcode100/Sprint-Challenge--Advanced-CSS.git"
+  },
+  "author": "Robert Harrison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhcode100/Sprint-Challenge--Advanced-CSS/issues"
+  },
+  "homepage": "https://github.com/rhcode100/Sprint-Challenge--Advanced-CSS#readme"
+}
